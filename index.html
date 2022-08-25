@@ -19,6 +19,9 @@
     <!-- Boostrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Website Portofolio</title>
   </head>
   <body>
@@ -65,18 +68,18 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <div class="row text-center">
           <div class="col-md-12 mb-3">
             <h2>About</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 text-center mb-1">
+          <div class="col-md-4 text-center mb-1" data-aos="fade-right" data-aos-duration="1000">
             Taylor Swift, in full Taylor Alison Swift, (born December 13, 1989, West Reading, Pennsylvania, U.S.), American pop and
             country music singer-songwriter whose tales of young heartache achieved widespread success in the early 21st century.
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. Her discography straddles genres, and her
             narrative songwriting—often inspired by her personal life—has received critical praise and widespread media coverage.
             Born in West Reading, Pennsylvania, Swift moved to Nashville
@@ -101,7 +104,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-2">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-delay="100">
               <img src="img/1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -110,7 +113,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -119,7 +122,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
               <img src="img//3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -128,7 +131,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
               <img src="img//4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -137,7 +140,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
               <img src="img//5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
@@ -154,6 +157,70 @@
       </svg>
     </section>
     <!-- EndProject -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col-md-12">
+            <h2>My Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/1.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/2.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/3.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/4.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/5.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/6.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/7.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/8.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/9.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="">
+              <img src="img/gallery/10.jpg" class="img-fluid gallery-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Galery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -214,6 +281,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Script Spread -->
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyAcmjbcXybRT-kpyRYUPnHLMM-O7tLrDFRBHMG8qfU9i7OXCui43Lg3O_iIDUXUUWC/exec'
       const form = document.forms['zulnurdiana-contact-form']
@@ -238,6 +306,22 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
+    <!-- Script AOS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        const galleryImg = document.querySelectorAll('.gallery-img');
+        galleryImg.forEach((img,i)=>{
+          img.dataset.aos = 'fade-down';
+          img.dataset.aosDelay = i * 100;
+          img.dataset.aosDuration = 1000;
+        })
+
+
+        AOS.init({
+          once: true
+        });
+      </script>
 
   </body>
 </html>
