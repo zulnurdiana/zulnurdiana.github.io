@@ -23,3 +23,101 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+/* Albums */
+
+.kotak-album {
+  background-color: #0d6efd;
+  border-radius: 10px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+
+}
+
+.kotak-album::before{
+  content: 'MY';
+  position: absolute;
+  font-size: 5em;
+  font-style: italic;
+  font-weight: bold;
+  top:30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.5s;
+  opacity: 0;
+  color: #fff;
+}
+
+.kotak-album:hover::before{
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.2;
+
+}
+
+.kotak-album::after {
+  content: "ALBUMS";
+  color: #fff;
+  position: absolute;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: bold;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.kotak-album:hover::after{
+  left: 50%;
+  transform: translate(-50%, 100%);
+  opacity: 0.2;
+
+}
+
+.album-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0,0,50px);
+}
+
+.kotak-album:hover .album-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.album-detail-button {
+  position: absolute;
+  bottom : 0;
+  left : 50%;
+  transform: translate3d(-50%,0,150px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.kotak-album:hover .album-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.album-image {
+  position: absolute;
+  left : 50%;
+  top : 50%;
+  transform: translate3d(-50%,-50%,100px);
+  max-width: 200px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.kotak-album:hover .album-image {
+  transform: translate3d(-50%, -50%,100px) rotate(5deg) scale(1.1);
+}

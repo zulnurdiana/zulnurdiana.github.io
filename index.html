@@ -150,6 +150,40 @@
           </div>
         </div>
       </div>
+
+      <!-- Albums -->
+        <div class="container">
+          <div class="row text-center mt-5 mb-3">
+            <div class="col-md-12">
+              <h2 class="text-white fw-bold">My Albums</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="kotak-album">
+                <h4 class="album-name">Red Album</h4>
+                <img src="img/album/1.jpg" alt="red-album" class="album-image">
+                <a href="" class="btn btn-light album-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="kotak-album">
+                <h4 class="album-name">1989 Album</h4>
+                <img src="img/album/2.jpg" alt="red-album" class="album-image">
+                <a href="" class="btn btn-light album-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="kotak-album">
+                <h4 class="album-name">Lover Album</h4>
+                <img src="img/album/3.png" alt="red-album" class="album-image">
+                <a href="" class="btn btn-light album-detail-button">Show Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- End Albums -->
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fff" fill-opacity="1"
           d="M0,224L48,186.7C96,149,192,75,288,74.7C384,75,480,149,576,160C672,171,768,117,864,122.7C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -335,6 +369,14 @@
         gsap.from('.author', {duration : 1.5,  x : -50 , delay : 0.5 , opacity : 0, ease : 'back'})
       </script>
 
+      <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+      <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".kotak-album"), {
+          max: 25,
+          speed: 400
+        });
 
+       
+      </script>
   </body>
 </html>
