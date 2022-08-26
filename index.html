@@ -56,8 +56,8 @@
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
       <img src="img/profile.jpg" width="220" class="rounded-circle img-thumbnail">
-      <h1 class="display-4 text-white fw-bold">Taylor Swift</h1>
-      <p class="lead text-white fw-bold">Singer | Director | Song Writter</p>
+      <h1 class="display-4 text-white fw-bold author">Taylor Swift</h1>
+      <p class="lead text-white fw-bold role"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fff" fill-opacity="1"
           d="M0,96L48,128C96,160,192,224,288,218.7C384,213,480,139,576,138.7C672,139,768,213,864,218.7C960,224,1056,160,1152,128C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -99,51 +99,51 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center mb-3">
-            <h2 class="text-white fw-bold">My Project</h2>
+            <h2 class="text-white fw-bold judul-project" data-aos="fade-down" data-aos-duration="1000">My Project</h2>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-2">
-            <div class="card" data-aos="flip-left" data-aos-delay="100">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
               <img src="img/1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
               <img src="img/2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
               <img src="img//3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="800">
               <img src="img//4.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="500">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="1000">
               <img src="img//5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col-md-12">
-            <h2>My Gallery</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">My Gallery</h2>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -225,12 +225,12 @@
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-down" data-aos-duration="1000">
           <div class="col-md-12 text-center mb-3">
             <h2>Contact Me</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="zoom-in-up" data-aos-duration="1000">
           <div class="col-md-6">
             <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
               <strong>Terimakasih!</strong> pesan anda sudah kami terima <i class="bi bi-heart-fill text-danger"></i>.
@@ -311,6 +311,7 @@
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <script>
         const galleryImg = document.querySelectorAll('.gallery-img');
+
         galleryImg.forEach((img,i)=>{
           img.dataset.aos = 'fade-down';
           img.dataset.aosDelay = i * 100;
@@ -322,6 +323,18 @@
           once: true
         });
       </script>
+
+      <!-- Script GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
+      <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.role',{duration : 2 , delay : 1.5 , text : 'Song Writter | Singer | Director'});
+        gsap.from('.jumbotron img', {duration : 1 , rotateY  : 360 ,  opacity : 0});
+        gsap.from('.navbar', {duration : 1.5 ,y : '-100%', opacity : 0 , ease : 'bounce'});
+        gsap.from('.author', {duration : 1.5,  x : -50 , delay : 0.5 , opacity : 0, ease : 'back'})
+      </script>
+
 
   </body>
 </html>
